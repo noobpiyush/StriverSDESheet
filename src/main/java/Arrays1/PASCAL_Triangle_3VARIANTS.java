@@ -49,10 +49,10 @@ public class PASCAL_Triangle_3VARIANTS {
 
         List<List<Integer>> ans = new ArrayList<>();
 
-        for (int row = 1;row<=n;row++){
+        for (int row = 1; row <= n; row++) {
             List<Integer> temp = new ArrayList<>();
-            for (int col =1;col<=row;col++){
-                temp.add((int)nCr(row-1,col-1));
+            for (int col = 1; col <= row; col++) {
+                temp.add((int) nCr(row - 1, col - 1));
             }
             ans.add(temp);
         }
@@ -64,24 +64,24 @@ public class PASCAL_Triangle_3VARIANTS {
 
         List<List<Integer>> ans = new ArrayList<>();
 
-        for (int row = 1;row<=n;row++){
+        for (int row = 1; row <= n; row++) {
             ans.add(pascalTriangleOptimaUtil(row));
         }
 
         return ans;
     }
 
-    public static List<Integer> pascalTriangleOptimaUtil(int row){
+    public static List<Integer> pascalTriangleOptimaUtil(int row) {
         List<Integer> ans = new ArrayList<>();
 
         ans.add(1);
 
         long res = 1;
 
-        for (int col = 1;col<row;col++){
+        for (int col = 1; col < row; col++) {
             res = res * (row - col);
-            res = res/col;
-            ans.add((int)res);
+            res = res / col;
+            ans.add((int) res);
         }
 
         return ans;
