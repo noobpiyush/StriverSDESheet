@@ -1,4 +1,4 @@
-package Arrays1;
+package com.Striver_SDE_Sheet.Arrays1;
 
 public class MaximumSubarray {
 

@@ -1,4 +1,4 @@
-package Arrays1;
+package com.Striver_SDE_Sheet.Arrays1;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
