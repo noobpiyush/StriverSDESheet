@@ -37,7 +37,6 @@ public class PalindromePartitioning {
                 return false;
             }
         }
-
         return true;
     }
 }
